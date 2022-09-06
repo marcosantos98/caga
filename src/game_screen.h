@@ -6,9 +6,9 @@
 #include "screen.h"
 #include "game.h"
 
-void test_init(Game *);
-void test_render(float);
-void test_dispose(void);
+void game_init(Game *);
+void game_render(float);
+void game_dispose(void);
 
 void init_cards(int, int, int, int, int);
 Color color_from_type(int);

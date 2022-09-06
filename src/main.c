@@ -5,7 +5,7 @@
 #include "game.h"
 
 #include "screen.h"
-#include "test_screen.h"
+#include "game_screen.h"
 
 #define WIDTH 800
 #define HEIGHT 800
@@ -13,9 +13,9 @@
 Screen *master_screen = {0};
 
 Screen test = {
-    .init = test_init,
-    .render = test_render,
-    .dispose = test_dispose,
+    .init = game_init,
+    .render = game_render,
+    .dispose = game_dispose,
 };
 
 int main(void)
@@ -39,6 +39,8 @@ int main(void)
     }
 
     master_screen->dispose();
+
+    free(game.cards);
 
     CloseWindow();
 }

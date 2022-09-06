@@ -2,7 +2,7 @@
 
 In progress trivia memory game written in C using [Raylib 4.0](www.raylib.com)
 
-![cnakegif](caga_v0.1.gif)
+![cnakegif](caga_v0.2.gif)
 
 ## How to build:
 
@@ -11,7 +11,7 @@ In progress trivia memory game written in C using [Raylib 4.0](www.raylib.com)
 **NOTE:** Tested on Arch Linux 5.19.X
 
 ```console
-git clone https://github.com/mscode98/caga.git
+git clone --recursive https://github.com/mscode98/caga.git
 cd caga
 mkdir build
 cmake ..

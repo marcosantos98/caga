@@ -1,0 +1,52 @@
+#ifndef CARD_H
+#define CARD_H
+
+#include "stdbool.h"
+
+#define CATEGORY_LENGHT 23
+
+typedef enum
+{
+    A = 0,
+    B
+} CardType;
+
+
+typedef enum
+{
+    GENERAL_KNOWLEDGE = 0,
+    ENTERTAINMENT_BOOKS,
+    ENTERTAINMENT_FILM,
+    ENTERTAINMENT_MUSIC,
+    ENTERTAINMENT_MUSICALS_AND_THEATRES,
+    ENTERTAINMENT_TELEVISION,
+    ENTERTAINMENT_VIDEO_GAMES,
+    ENTERTAINMENT_BOARD_GAMES,
+    SCIENCE_AND_NATURE,
+    SCIENCE_COMPUTERS,
+    SCIENCE_MATHEMATICS,
+    MYTHOLOGY,
+    SPORTS,
+    GEOGRAPHY,
+    HISTORY,
+    POLITICS,
+    ART,
+    CELEBRITIES,
+    ANIMALS,
+    VEHICLES,
+    ENTERTAINMENT_COMICS,
+    SCIENCE_GADGETS,
+    ENTERTAINMENT_JAPANESE_ANIME_AND_MANGA,
+    ENTERTAINMENT_CARTOON_AND_ANIMATIONS,
+} CardCategory;
+
+typedef struct
+{
+    int index;
+    int type;
+    bool revelead;
+} Card;
+
+const char * category_to_cstr(CardCategory);
+
+#endif // CARD_H

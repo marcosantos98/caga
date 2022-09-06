@@ -20,7 +20,6 @@ Screen test = {
 
 int main(void)
 {
-
     InitWindow(WIDTH, HEIGHT, "caga");
     SetTargetFPS(60);
 

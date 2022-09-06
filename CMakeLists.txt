@@ -21,8 +21,13 @@ endif()
 set(CMAKE_C_COMPILER ${cc})
 set(CMAKE_C_FLAGS "-Wall -Wextra -std=c99 -pedantic")
 
+set(JANSSON_WITHOUT_TESTS ON)
 add_subdirectory(vendor/jansson)
 include_directories(vendor/jansson/src)
-add_executable(caga main.c)
 
-target_link_libraries(caga raylib)
+file(COPY res DESTINATION ${CMAKE_BINARY_DIR})
+
+file(GLOB PROJ_SOURCES "src/*.c" "src/*.h")
+add_executable(caga ${PROJ_SOURCES})
+
+target_link_libraries(caga raylib jansson)

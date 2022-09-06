@@ -2,7 +2,6 @@
 #include "stdlib.h"
 
 #include "raylib.h"
-#include "card.h"
 #include "game.h"
 
 #include "screen.h"

@@ -36,10 +36,10 @@ void generate_cards_for_gamemode(Game *ctx)
         i++;
     }
 
-    cards_suffle(ctx->cards, cards_amount);
+    cards_shuffle(ctx->cards, cards_amount);
 }
 
-void cards_suffle(Card *array, size_t n)
+void cards_shuffle(Card *array, size_t n)
 {
     if (n > 1) 
     {

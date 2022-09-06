@@ -23,6 +23,6 @@ typedef struct
 
 Game create_game(int, int, int, int);
 void generate_cards_for_gamemode(Game *);
-void cards_shuffle(Card *, int);
+void cards_shuffle(Card *, size_t);
 
 #endif // GAME_H

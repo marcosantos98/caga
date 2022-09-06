@@ -1,6 +1,6 @@
 #include "card.h"
 
-void category_to_cstr(CardCategory category)
+const char * category_to_cstr(CardCategory category)
 {
     switch (category)
     {

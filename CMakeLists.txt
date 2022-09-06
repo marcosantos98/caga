@@ -18,8 +18,11 @@ if (NOT raylib_FOUND)
   endif()
 endif()
 
-set(CMAKE_C_COMPILER "cc")
+set(CMAKE_C_COMPILER ${cc})
 set(CMAKE_C_FLAGS "-Wall -Wextra -std=c99 -pedantic")
 
+add_subdirectory(vendor/jansson)
+include_directories(vendor/jansson/src)
 add_executable(caga main.c)
+
 target_link_libraries(caga raylib)
